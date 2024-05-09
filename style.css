@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ffcccc;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.animation-box {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.animation-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Animações */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#animation1 {
+    animation: rotate 5s infinite linear;
+}
+
+#animation2 {
+    animation: bounce 2s infinite ease-in-out;
+}
+
+#animation3 {
+    animation: zoom 4s infinite alternate;
+}
+.florzinha{
+    width: 50%;
+}
